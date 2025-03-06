@@ -23,7 +23,7 @@ public class Credencial {
 		boolean verdaderoNum = false;
 		boolean verdaderoMay = false;
 		boolean verdaderoMin = false;
-		for(int i=0; i<=this.password.length() || (verdaderoNum && verdaderoMay && verdaderoMin); i++) {
+		for(int i=0; i<this.password.length() || (verdaderoNum==false && verdaderoMay==false && verdaderoMin==false); i++) {
 			verdaderoNum = Character.isDigit(this.password.charAt(i))?true:verdaderoNum;
 			verdaderoMay = Character.isUpperCase(this.password.charAt(i))?true:verdaderoMay;
 			verdaderoMin = Character.isLowerCase(this.password.charAt(i))?true:verdaderoMin;
